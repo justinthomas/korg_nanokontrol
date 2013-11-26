@@ -17,18 +17,22 @@ from sensor_msgs.msg import *
 
 control_axes = [{
   # Syntax is channel: slide or knob number
-  # mode 1, sliders
-   2:  0,  3:  1,  4:  2,  5:  3,  6:  4,  7:  5,  8:  6, 9:  7, 1:  8,
-  # mode 1, knobs
+  # sliders
+  # Indicies 0 - 7 
+  2:  0,  3:  1,  4:  2,  5:  3,  6:  4,  7:  5,  8:  6, 9:  7, 1:  8,
+  # knobs
+  # Indicies 8 - 15
   10:  9, 11: 10, 12: 11, 13: 12, 14: 13, 15: 14, 16: 15}]
 
 control_buttons = [[
-  # mode 1
-  # up, down
+  # Row of Solo, Row of Mute, row of Rec
+  # Indicies 0 - 7, 8 - 15, and 16 - 23
   32, 33, 34, 35, 36, 37, 38, 39, 48, 49, 50, 51, 52, 53, 54, 55, 64, 65, 66, 67, 68, 69, 70, 71,
   # rew, ff, stop, play, rec
+  # Indicies 24 - 28
   43, 44, 42, 41, 45,
   # Track L, Track R, Marker Set, Marker Left, Marker Right, Cycle
+  # Indicies 29 - 34
   58, 59, 60, 61, 62, 46]]
 
 def main():
@@ -110,6 +114,9 @@ def main():
 
                if control_id in control_buttons[mode]:
                   button = control_buttons[mode].index(control_id)
+
+#                  print "Button index: %d" % button
+
                   if control[2] != 0:
                      m.buttons[button] = 1
                   else:
