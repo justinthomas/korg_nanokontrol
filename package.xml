@@ -1,10 +1,10 @@
 <package>
-  <name>korg_nanokontrol</name>
+  <name>korg_nanokontrol2</name>
   <version>0.1.1</version>
   <description>
-      ROS driver to use the Kork NanoKontrol MIDI device as a joystick.
+      ROS driver to use the Korg NanoKontrol 2 MIDI device as a joystick.
   </description>
-  <maintainer email="ahendrix@willowgarage.com">Austin Hendrix</maintainer>
+  <maintainer email="justinthomas@jtwebs.net">Justin Thomas</maintainer>
   <license>BSD</license>
   <author>Austin Hendrix</author>
   <url>http://ros.org/wiki/korg_nanokontrol</url>
@@ -15,5 +15,3 @@
   <run_depend>python-pygame</run_depend>
   
 </package>
-
-

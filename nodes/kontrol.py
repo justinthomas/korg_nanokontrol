@@ -5,7 +5,7 @@
 # Author: Austin Hendrix
 # Modified for NanoKontrol2 by: Justin Thomas
 
-import roslib; roslib.load_manifest('korg_nanokontrol')
+import roslib; roslib.load_manifest('korg_nanokontrol2')
 import rospy
 
 import pygame

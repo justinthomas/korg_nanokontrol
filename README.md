@@ -9,4 +9,9 @@ See [korg.com](http://www.korg.com/SupportPage.aspx?productid=596) for the Kontr
 Note: It is necessary to install python-pygame
 
     sudo apt-get install python-pygame
-    
+
+To launch,
+
+    rosrun korg_nanokontrol2 kontrol.py #
+
+where # is an integer selecting which midi device
