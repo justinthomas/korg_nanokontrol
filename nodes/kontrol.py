@@ -19,10 +19,10 @@ control_axes = [{
   # Syntax is channel: slide or knob number
   # sliders
   # Indicies 0 - 7 
-  2:  0,  3:  1,  4:  2,  5:  3,  6:  4,  7:  5,  8:  6, 9:  7, 1:  8,
+  0:  0,  1:  1,  2:  2,  3:  3,  4:  4,  5:  5,  6:  6, 7:  7, 23:  15,
   # knobs
   # Indicies 8 - 15
-  10:  9, 11: 10, 12: 11, 13: 12, 14: 13, 15: 14, 16: 15}]
+  17:  9, 18: 10, 19: 11, 20: 12, 21: 13, 22: 14, 16: 8}]
 
 control_buttons = [[
   # Row of Solo, Row of Mute, row of Rec
