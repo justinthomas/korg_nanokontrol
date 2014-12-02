@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(korg_nanokontrol)
+project(korg_nanokontrol2)
 
 find_package(catkin REQUIRED)
 
