@@ -102,7 +102,7 @@ def main():
                      continue
 
                if control_id in control_axes[mode]:
-                  control_val = float(control[2] - 63) / 63.0
+                  control_val = float(control[2]) / 127.0
                   if control_val < -1.0:
                      control_val = -1.0
                   if control_val > 1.0:
