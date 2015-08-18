@@ -55,7 +55,7 @@ def main():
    controller = pygame.midi.Input(input_dev)
 
    rospy.init_node('kontrol')
-   pub = rospy.Publisher('nanokontrol2', Joy, latch=True)
+   pub = rospy.Publisher('nanokontrol2', Joy, latch=True, queue_size=1)
 
    m = Joy()
    m.axes = [ 0 ] * 16
